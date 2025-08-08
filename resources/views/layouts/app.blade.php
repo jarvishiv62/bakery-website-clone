@@ -23,7 +23,9 @@
 
   <!-- ✅ Your compiled Laravel CSS -->
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    @stack('styles')
+  <link rel="stylesheet" href="{{ asset('css/products.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/about.css') }}">
+@stack('styles')
 </head>
 
 <body>

@@ -16,4 +16,6 @@ mix.js('resources/js/app.js', 'public/js')
         //
     ]);
 mix.css('resources/css/products.css', 'public/css');
+mix.css('resources/css/about.css', 'public/css');
+
 

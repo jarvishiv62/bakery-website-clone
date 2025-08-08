@@ -3,6 +3,7 @@
 @section('title', 'Our Products')
 
 @section('content')
+
    <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
   <!-- Indicators -->
   <div class="carousel-indicators">
@@ -83,12 +84,12 @@
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         @php
             $products = [
-                ['name' => 'Chocolate Fudge Cake', 'price' => 24.99, 'category' => 'Cakes', 'image' => 'pro1.jpg'],
-                ['name' => 'Sourdough Bread', 'price' => 5.99, 'category' => 'Bread', 'image' => 'pro2.webp'],
-                ['name' => 'Croissant', 'price' => 3.50, 'category' => 'Pastries', 'image' => 'pro3.jpeg'],
-                ['name' => 'Chocolate Chip Cookies', 'price' => 8.99, 'category' => 'Cookies', 'image' => 'pro4.jpg'],
-                ['name' => 'Red Velvet Cupcake', 'price' => 3.25, 'category' => 'Desserts', 'image' => 'pro5.webp'],
-                ['name' => 'Baguette', 'price' => 2.99, 'category' => 'Bread', 'image' => 'pro6.jpeg']
+                ['name' => 'Chocolate Fudge Cake', 'price' => 249, 'category' => 'Cakes', 'image' => 'pro1.jpg'],
+                ['name' => 'Sourdough Bread', 'price' => 99, 'category' => 'Bread', 'image' => 'pro2.webp'],
+                ['name' => 'Croissant', 'price' => 350, 'category' => 'Pastries', 'image' => 'pro3.jpeg'],
+                ['name' => 'Chocolate Chip Cookies', 'price' => 199, 'category' => 'Cookies', 'image' => 'pro4.jpg'],
+                ['name' => 'Red Velvet Cupcake', 'price' => 325, 'category' => 'Desserts', 'image' => 'pro5.webp'],
+                ['name' => 'Baguette', 'price' => 299, 'category' => 'Bread', 'image' => 'pro6.jpeg']
             ];
         @endphp
 
@@ -103,7 +104,7 @@
                     <h5 class="card-title">{{ $product['name'] }}</h5>
                     <p class="card-text text-muted mb-3">Delicious {{ strtolower($product['category']) }} made with premium ingredients and baked fresh daily.</p>
                     <div class="mt-auto d-flex justify-content-between align-items-center">
-                        <span class="h5 mb-0 text-primary">${{ number_format($product['price'], 2) }}</span>
+                        <span class="h5 mb-0 text-primary">Rs {{ number_format($product['price'], 2) }}</span>
                         <button class="btn btn-primary ">
                             <i class="bi bi-cart-plus me-1"></i> Add to Cart
                         </button>
@@ -155,14 +156,12 @@
 <!-- Features Section -->
 
 <section class="features-section">
-    <div class="row">
-        <div class="col-12 text-center">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-12 text-center">
             <h1 class="display-5 fw-bold">Our Unique Features</h1>
             <p class="lead">Experience the art of baking with Wish-Bakery</p>
         </div>
-    </div>
-    <div class="container">
-        <div class="row g-4">
             <div class="col-md-4">
                 <div class="feature-box">
                     <i class="bi bi-truck"></i>

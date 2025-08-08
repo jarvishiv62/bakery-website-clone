@@ -265,7 +265,7 @@
   ];
 @endphp
 
-<section class="home-section testimonials-bg text-center">
+<section class="home-section testimonials text-center">
   <div class="container">
     <h2 class="mb-4">Rave Reviews from Our Loved Customers</h2>
     <div class="row justify-content-center g-4">
