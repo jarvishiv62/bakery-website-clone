@@ -26,12 +26,23 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact');  
 
+//catering page
+Route::get('/catering', function () {
+    return view('catering');
+})->name('catering');  
+
 // Cart Page
 Route::get('/cart', function () {
     return view('cart');
 })->name('cart');  
 
+// Account Page
+Route::get('/account', function () {
+    return view('account');
+})->name('account'); 
+
 // Checkout Page (commented out)
 // Route::get('/checkout', function () { 
 //     return view('checkout'); 
 // })->name('checkout');
+

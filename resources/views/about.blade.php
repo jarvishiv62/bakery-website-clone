@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'About Us')
+@section('title', 'About Us | ' . config('app.name'))
 
 @section('content')
 
@@ -9,6 +9,7 @@
     <div class="container position-relative z-index-1">
         <div class="row justify-content-center text-center">
             <div class="col-lg-8">
+                <img src="/images/catering/logohead.webp" class="img-fluid" alt="Catering Hero">
                 <h1 class="display-3 fw-bold text-white mb-4" data-aos="fade-up">Baked with Love,<br>Shared with Joy</h1>
                 <p class="lead text-white mb-4" data-aos="fade-up" data-aos-delay="100">Every bite tells a story of passion, tradition, and the finest ingredients</p>
                 <div class="d-flex justify-content-center gap-3" data-aos="fade-up" data-aos-delay="200">

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'Home | ' . config('app.name'))
 
 @section('content')
 
@@ -16,17 +16,17 @@
   <div class="carousel-inner" style="top: 60px;">
     <div class="carousel-item active">
       <a href="{{ route('products') }}">
-        <img src="{{ asset('images/hero1.jpg') }}" class="d-block w-100" alt="Vanilla Cake">
+        <img src="{{ asset('images/home/hero1.jpg') }}" class="d-block w-100" alt="Vanilla Cake">
       </a>
     </div>
     <div class="carousel-item">
       <a href="{{ route('products') }}">
-        <img src="{{ asset('images/hero2.jpg') }}" class="d-block w-100" alt="Chocolate Cake">
+        <img src="{{ asset('images/home/hero2.jpg') }}" class="d-block w-100" alt="Chocolate Cake">
       </a>
     </div>
     <div class="carousel-item">
       <a href="{{ route('products') }}">
-        <img src="{{ asset('images/hero3.jpg') }}" class="d-block w-100" alt="Strawberry Cake">
+        <img src="{{ asset('images/home/hero3.jpg') }}" class="d-block w-100" alt="Strawberry Cake">
       </a>
     </div>
   </div>
@@ -51,28 +51,28 @@
             [
                 'name' => 'Vanilla Cake',
                 'price' => '₹1,299',
-                'image' => 'cake1.webp',
+                'image' => 'home/cake1.webp',
                 'description' => 'Classic vanilla sponge layered with creamy frosting',
                 'category' => 'Cakes'
             ],
             [
                 'name' => 'Chocolate Fudge',
                 'price' => '₹1,499',
-                'image' => 'cake2.webp',
+                'image' => 'home/cake2.webp',
                 'description' => 'Rich chocolate cake with decadent fudge icing',
                 'category' => 'Cakes'
             ],
             [
                 'name' => 'Pastry',
                 'price' => '₹99',
-                'image' => 'cake3.webp',
+                'image' => 'home/cake3.webp',
                 'description' => 'Flaky, buttery pastries baked fresh',
                 'category' => 'Pastries'
             ],
             [
                 'name' => 'Assorted Cake',
                 'price' => '₹299',
-                'image' => 'cake4.webp',
+                'image' => 'home/cake4.webp',
                 'description' => 'Delightful mix of chocolate chip and more',
                 'category' => 'Cakes'
             ]
@@ -92,7 +92,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="card product-card h-100 border-0 shadow-sm">
                         <div class="position-relative">
-                            <img src="{{ asset('images/' . $product['image']) }}" class="card-img-top" alt="{{ $product['name'] }}">
+                            <img src="{{ asset('images/home/' . $product['image']) }}" class="card-img-top" alt="{{ $product['name'] }}">
                             <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-2">{{ $product['category'] }}</span>
                         </div>
                         <div class="card-body">
@@ -132,7 +132,7 @@
                 <!-- Birthday -->
                 <div class="col-md-6 col-lg-4">
                     <div class="gift-card h-100 position-relative overflow-hidden rounded-4 shadow-sm">
-                        <img src="{{ asset('images/cake5.webp') }}" class="w-100 h-100 object-fit-cover" alt="Birthday Gifts">
+                        <img src="{{ asset('images/home/cake5.webp') }}" class="w-100 h-100 object-fit-cover" alt="Birthday Gifts">
                         <div class="gift-overlay d-flex flex-column justify-content-center p-4">
                             <h3 class="text-white fw-bold mb-2">Birthday Delights</h3>
                             <p class="text-white-50 mb-3">Make their special day sweeter with our custom cakes.</p>
@@ -144,7 +144,7 @@
                 <!-- Anniversary -->
                 <div class="col-md-6 col-lg-4">
                     <div class="gift-card h-100 position-relative overflow-hidden rounded-4 shadow-sm">
-                        <img src="{{ asset('images/ocake3.jpeg') }}" class="w-100 h-100 object-fit-cover" alt="Anniversary Gifts">
+                        <img src="{{ asset('images/home/ocake3.jpeg') }}" class="w-100 h-100 object-fit-cover" alt="Anniversary Gifts">
                         <div class="gift-overlay d-flex flex-column justify-content-center p-4">
                             <h3 class="text-white fw-bold mb-2">Anniversary Specials</h3>
                             <p class="text-white-50 mb-3">Celebrate love with our romantic dessert collections.</p>
@@ -156,7 +156,7 @@
                 <!-- Wedding -->
                 <div class="col-md-6 col-lg-4">
                     <div class="gift-card h-100 position-relative overflow-hidden rounded-4 shadow-sm">
-                        <img src="{{ asset('images/ocake1.jpg') }}" class="w-100 h-100 object-fit-cover" alt="Wedding Gifts">
+                        <img src="{{ asset('images/home/ocake1.jpg') }}" class="w-100 h-100 object-fit-cover" alt="Wedding Gifts">
                         <div class="gift-overlay d-flex flex-column justify-content-center p-4">
                             <h3 class="text-white fw-bold mb-2">Wedding Favors</h3>
                             <p class="text-white-50 mb-3">Elegant treats for your special day.</p>
@@ -168,7 +168,7 @@
                 <!-- Corporate -->
                 <div class="col-md-6 col-lg-4">
                     <div class="gift-card h-100 position-relative overflow-hidden rounded-4 shadow-sm">
-                        <img src="{{ asset('images/ocake2.webp') }}" class="w-100 h-100 object-fit-cover" alt="Corporate Gifts">
+                        <img src="{{ asset('images/home/ocake2.webp') }}" class="w-100 h-100 object-fit-cover" alt="Corporate Gifts">
                         <div class="gift-overlay d-flex flex-column justify-content-center p-4">
                             <h3 class="text-white fw-bold mb-2">Corporate Gifts</h3>
                             <p class="text-white-50 mb-3">Impress your clients with our premium gift boxes.</p>
@@ -180,7 +180,7 @@
                 <!-- Holiday -->
                 <div class="col-md-6 col-lg-4">
                     <div class="gift-card h-100 position-relative overflow-hidden rounded-4 shadow-sm">
-                        <img src="{{ asset('images/cake.webp') }}" class="w-100 h-100 object-fit-cover" alt="Holiday Gifts">
+                        <img src="{{ asset('images/home/cake.webp') }}" class="w-100 h-100 object-fit-cover" alt="Holiday Gifts">
                         <div class="gift-overlay d-flex flex-column justify-content-center p-4">
                             <h3 class="text-white fw-bold mb-2">Holiday Specials</h3>
                             <p class="text-white-50 mb-3">Festive treats for every holiday season.</p>
@@ -191,7 +191,7 @@
                 <!-- surprise -->
                 <div class="col-md-6 col-lg-4">
                     <div class="gift-card h-100 position-relative overflow-hidden rounded-4 shadow-sm">
-                        <img src="{{ asset('images/ocake4.jpg') }}" class="w-100 h-100 object-fit-cover" alt="Surprise Gifts">
+                        <img src="{{ asset('images/home/ocake4.jpg') }}" class="w-100 h-100 object-fit-cover" alt="Surprise Gifts">
                         <div class="gift-overlay d-flex flex-column justify-content-center p-4">
                             <h3 class="text-white fw-bold mb-2">Surprise Gift</h3>
                             <p class="text-white-50 mb-3">Surprise your loved ones with our custom cakes.</p>

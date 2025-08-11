@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Our Products')
+@section('title', 'Our Products | ' . config('app.name'))
 
 @section('content')
 
@@ -16,17 +16,17 @@
   <div class="carousel-inner" style="top: 60px;">
     <div class="carousel-item active">
       <a href="{{ route('products') }}">
-        <img src="{{ asset('images/hero1.jpg') }}" class="d-block w-100" alt="Vanilla Cake">
+        <img src="{{ asset('images/home/hero1.jpg') }}" class="d-block w-100" alt="Vanilla Cake">
       </a>
     </div>
     <div class="carousel-item">
       <a href="{{ route('products') }}">
-        <img src="{{ asset('images/hero2.jpg') }}" class="d-block w-100" alt="Chocolate Cake">
+        <img src="{{ asset('images/home/hero2.jpg') }}" class="d-block w-100" alt="Chocolate Cake">
       </a>
     </div>
     <div class="carousel-item">
       <a href="{{ route('products') }}">
-        <img src="{{ asset('images/hero3.jpg') }}" class="d-block w-100" alt="Strawberry Cake">
+        <img src="{{ asset('images/home/hero3.jpg') }}" class="d-block w-100" alt="Strawberry Cake">
       </a>
     </div>
   </div>
@@ -45,7 +45,7 @@
 
 <!-- Products Section -->
 <section class="products-section">
-    <div class="container products-container">
+    <div class="container products-container text-center">
         <div class="section-title">
             <h1>Our Fresh Bakes</h1>
             <p>Handcrafted with love and the finest ingredients, each bite is a celebration of flavor and tradition.</p>
@@ -97,7 +97,7 @@
         <div class="col">
             <div class="card h-100 product-card shadow-sm">
                 <div class="position-relative">
-                    <img src="{{asset('images/' . $product['image'])}}" class="card-img-top" alt="{{ $product['name'] }}">
+                    <img src="{{asset('images/home/' . $product['image'])}}" class="card-img-top" alt="{{ $product['name'] }}">
                     <span class="position-absolute top-0 end-0 bg-danger text-white small px-2 py-1 m-2 rounded">{{ $product['category'] }}</span>
                 </div>
                 <div class="card-body d-flex flex-column">
@@ -156,27 +156,27 @@
 <!-- Features Section -->
 
 <section class="features-section">
-    <div class="container">
-        <div class="row g-4">
+    <div class="container row mt-5">
             <div class="col-12 text-center">
             <h1 class="display-5 fw-bold">Our Unique Features</h1>
             <p class="lead">Experience the art of baking with Wish-Bakery</p>
         </div>
-            <div class="col-md-4">
+        <div class="row g-4">
+            <div class="col-4">
                 <div class="feature-box">
                     <i class="bi bi-truck"></i>
                     <h5>Free Shipping</h5>
                     <p>On orders over Rs500</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-4">
                 <div class="feature-box">
                     <i class="bi bi-arrow-clockwise"></i>
                     <h5>Fresh Daily</h5>
                     <p>Baked fresh every morning</p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-4">
                 <div class="feature-box">
                     <i class="bi bi-shield-check"></i>
                     <h5>Quality Guaranteed</h5>
