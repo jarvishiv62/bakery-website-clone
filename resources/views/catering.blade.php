@@ -84,7 +84,7 @@
                     </div>
                 </div>
             </div>
-    </div>
+    </div>3
 </div>
 
 <!-- Birthday Cakes Modal -->
@@ -145,7 +145,7 @@
                             <div class="modal-product-body">
                                 <h4 class="modal-product-title">Royal Elegance</h4>
                                 <p class="text-muted">Five-tier vanilla and red velvet cake with buttercream and gold leaf accents.</p>
-                                <p class="modal-product-price">From Rs 299</p>
+                                <p class="modal-product-price">From Rs 1999</p>
                             </div>
                         </div>
                     </div>
@@ -156,7 +156,7 @@
                             <div class="modal-product-body">
                                 <h4 class="modal-product-title">Naked Beauty</h4>
                                 <p class="text-muted">Semi-naked cake with fresh flowers and seasonal fruits.</p>
-                                <p class="modal-product-price">From Rs 249</p>
+                                <p class="modal-product-price">From Rs 1699</p>
                             </div>
                         </div>
                     </div>

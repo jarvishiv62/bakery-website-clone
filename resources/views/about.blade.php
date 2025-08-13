@@ -645,8 +645,11 @@
         </div>
     </div>
 </section>
+@endsection
 
-</div>
+@push('styles')
+<link rel="stylesheet" href="{{ asset('css/about.css') }}">
+@endpush
 
 @push('scripts')
 <script>

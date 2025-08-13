@@ -13,7 +13,7 @@
   </div>
 
   <!-- Slides -->
-  <div class="carousel-inner" style="top: 60px;">
+  <div class="carousel-inner">
     <div class="carousel-item active">
       <a href="{{ route('products') }}">
         <img src="{{ asset('images/home/hero1.jpg') }}" class="d-block w-100" alt="Vanilla Cake">
@@ -44,7 +44,7 @@
 
 
 <!-- Products Section -->
-<section class="products-section">
+<section class="products-section pt-5">
     <div class="container products-container text-center">
         <div class="section-title">
             <h1>Our Fresh Bakes</h1>
@@ -155,7 +155,7 @@
 
 <!-- Features Section -->
 
-<section class="features-section">
+<section class="features-section pb-5">
     <div class="container row mt-5">
             <div class="col-12 text-center">
             <h1 class="display-5 fw-bold">Our Unique Features</h1>
@@ -183,22 +183,6 @@
                     <p>100% satisfaction</p>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- Newsletter Section -->
-<section class="newsletter-section">
-    <div class="container">
-        <div class="newsletter-content">
-            <h2>Join Our Bakery Family</h2>
-            <p>Subscribe to our newsletter and be the first to know about our fresh bakes, special offers, and exclusive deals!</p>
-            <form class="newsletter-form">
-                <input type="email" class="form-control" placeholder="Your email address" required>
-                <button type="submit" class="btn-newsletter">
-                    <i class="bi bi-envelope-fill me-2"></i> Subscribe Now
-                </button>
-            </form>
         </div>
     </div>
 </section>

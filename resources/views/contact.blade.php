@@ -30,7 +30,7 @@
                         </div>
                         <h3 class="h5 mb-3">Call Us</h3>
                         <p class="mb-0">
-                            <a href="tel:+1234567890" class="text-decoration-none">+1 (234) 567-890</a>
+                            <a href="tel:+1234567890" class="text-decoration-none">+91 9876543210</a>
                         </p>
                         <p class="small text-muted mt-2">Mon-Sat: 8:00 AM - 8:00 PM</p>
                     </div>
@@ -52,13 +52,13 @@
                 
                 <!-- Location -->
                 <div class="col-md-4">
-                    <div class="contact-card h-100 text-center p-4 rounded-3">
-                        <div class="contact-icon mb-3">
+                    <div class="contact-card h-100 text-center rounded-3">
+                        <div class="contact-icon mb-3 ">
                             <i class="fas fa-map-marker-alt fa-3x"></i>
                         </div>
                         <h3 class="h5 mb-3">Visit Us</h3>
-                        <p class="mb-2">123 Bakery Street</p>
-                        <p class="mb-0">New York, NY 10001</p>
+                        <p class="mb-2">maldahiya</p>
+                        <p class="mb-0">Varanasi, 221002</p>
                         <p class="small text-muted mt-2">Open in <a href="#" class="text-decoration-none">Google Maps</a></p>
                     </div>
                 </div>
@@ -70,13 +70,13 @@
     <section class="faq-section py-5 bg-light">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-8 text-center mb-5">
+                <div class="col-lg-12 text-center mb-5">
                     <h2 class="display-5 fw-bold mb-3">Frequently Asked Questions</h2>
                     <p class="lead">Find answers to common questions about our bakery</p>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-8">
+                <div class="col-lg-10">
                     <div class="accordion" id="faqAccordion">
                         <!-- FAQ Item 1 -->
                         <div class="accordion-item mb-3 border-0 rounded-3 overflow-hidden">
@@ -147,31 +147,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="newsletter-section py-5 position-relative bg-pattern">
-        <div class="container position-relative z-index-1">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <div class="newsletter-content bg-white p-4 p-md-5 rounded-3 shadow-sm">
-                        <div class="newsletter-icon mb-4">
-                            <i class="fas fa-cupcake fa-3x text-accent"></i>
-                        </div>
-                        <h2 class="display-5 fw-bold mb-3">Subscribe to Our Sweet Newsletter</h2>
-                        <p class="lead mb-4">Exclusive offers, recipes, and baking tips straight to your inbox.</p>
-                        
-                        <form class="newsletter-form needs-validation" novalidate>
-                            <div class="input-group mb-3">
-                                <input type="email" class="form-control form-control-lg" placeholder="Your email address" required>
-                                <button class="btn btn-primary btn-lg px-4" type="submit">Subscribe</button>
-                            </div>
-                            <div class="form-text">We'll never share your email. Unsubscribe anytime.</div>
-                        </form>
                     </div>
                 </div>
             </div>

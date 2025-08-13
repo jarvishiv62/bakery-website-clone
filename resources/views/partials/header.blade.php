@@ -4,15 +4,13 @@
         <div class="container">
             <!-- Brand Logo -->
             <a class="navbar-brand" href="{{ url('/') }}" aria-label="Home">
-                <img src="{{ asset('images/home/logo.png') }}" alt="{{ config('app.name') }}" class="img-fluid main-logo">
+                <img src="{{ asset('images/home/logo.png') }}" alt="{{ config('app.name') }}" class="main-logo">
             </a>
 
             <!-- Mobile Menu Toggle & Cart -->
             <div class="d-flex align-items-center order-lg-3">
                 <a href="{{ route('cart') }}" class="nav-icon cart-icon position-relative" aria-label="Shopping Cart">
                     <i class="fas fa-shopping-bag" aria-hidden="true"></i>
-                    <span class="cart-count">0</span>
-                    <span class="visually-hidden">items in cart</span>
                 </a>
                 <button class="navbar-toggler" type="button" 
                         data-bs-toggle="collapse" 
@@ -74,7 +72,7 @@
                                         <ul class="mega-menu-list">
                                             <li><a href="#">Fast Delivery</a></li>
                                             <li><a href="#">Local Delivery</a></li>
-                                            <li><a href="#">Pickup in Store</a></li>
+                                            <li><a href="#">Pickup at Store</a></li>
                                         </ul>
                                     </div>
 
@@ -174,11 +172,24 @@
                         </div>  
                     </li>
 
+
                     <!-- About Link -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('about') }}">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" 
+                           href="{{ route('about') }}" 
+                           id="aboutDropdown" 
+                           role="button" 
+                           data-bs-toggle="dropdown" 
+                           aria-expanded="false" 
+                           aria-haspopup="true" 
+                           data-has-dropdown="true">
                             <h4>Our Story</h4>
                         </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="{{ route('about') }}#mission">Mission</a></li>
+                            <li><a class="dropdown-item" href="{{ route('about') }}#vision">Vision</a></li>
+                            <li><a class="dropdown-item" href="{{ route('about') }}#values">careers</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>

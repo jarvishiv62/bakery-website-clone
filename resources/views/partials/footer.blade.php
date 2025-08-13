@@ -1,4 +1,21 @@
+<!-- Newsletter Section -->
+<section class="newsletter-section">
+    <div class="container">
+        <div class="newsletter-content">
+            <h2>Join Our Bakery Family</h2>
+            <p>Subscribe to our newsletter and be the first to know about our fresh bakes, special offers, and exclusive deals!</p>
+            <form class="newsletter-form">
+                <input type="email" class="form-control" placeholder="Your email address" required>
+                <button type="submit" class="btn-newsletter">
+                    <i class="bi bi-envelope-fill me-2"></i> Subscribe Now
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
 @php
+
     // Set default values for all variables
     $businessName = config('app.name', 'Wish-Bakery');
     $currentYear = date('Y');
